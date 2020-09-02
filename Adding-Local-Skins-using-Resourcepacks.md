@@ -49,4 +49,5 @@ If you wish to match more than one user, there is also support for using regular
           "skin": "hdskins:textures/skins/super_silly_pony.png"
        }
    ]
- }```
+ }
+```
