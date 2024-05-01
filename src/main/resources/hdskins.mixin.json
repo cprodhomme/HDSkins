@@ -4,7 +4,9 @@
   "package": "com.minelittlepony.hdskins.mixin",
   "refmap": "hdskins.mixin.refmap.json",
   "compatibilityLevel": "JAVA_16",
-  "mixins": [],
+  "mixins": [
+    "MixinServerLoginNetworkHandler"
+  ],
   "client": [
     "client.MixinPlayerListEntry",
     "client.MixinPlayerSkinTexture",
