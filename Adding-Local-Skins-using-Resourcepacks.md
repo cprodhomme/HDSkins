@@ -2,7 +2,7 @@ Besides allowing you to upload skins to a custom skin server, HDSkins also inclu
 
 Simply create a resourcepack and add a json file like this similar to this one:
 
-```
+```json
 {
   "skins": [
       {
@@ -14,11 +14,11 @@ Simply create a resourcepack and add a json file like this similar to this one:
   ]
 }
 ```
-And place it at `assets/hdskins/textures/skins/skins.json`
+And place it at `/assets/hdskins/textures/skins/skins.json`
 
 Name is the display name of the user who's skin you want to replace. You can also specify a uuid of the player's minecraft account:
 
-```
+```json
 {
   "skins": [
       {
@@ -31,7 +31,7 @@ Name is the display name of the user who's skin you want to replace. You can als
 }
 ```
 
-- Type is type of skin which can be any of (`SKIN`, `ELYTRA`, or `CAPE`), 
+- Type is type of skin which can be any of (`SKIN`, `ELYTRA`, or `CAPE`)
 - Skin is the resource path for the texture you want to use, also in the resourcepack. Must be lowercase.
 - Model is the vanilla model type, either `default` or `slim` which controls which arm types the player will have
 
@@ -40,7 +40,8 @@ In this case the json file will change me (Sollace) to use the skin texture loca
 
 If you wish to match more than one user, there is also support for using regular expressions.
 
-```{
+```json
+{
    "skins": [
        {
           "type": "SKIN",
